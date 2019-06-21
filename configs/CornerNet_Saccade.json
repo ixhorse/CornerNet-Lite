@@ -1,13 +1,13 @@
 {
     "system": {
-        "dataset": "COCO",
-        "batch_size": 48,
+        "dataset": "VisDrone",
+        "batch_size": 12,
         "sampling_function": "cornernet_saccade",
 
         "train_split": "trainval",
         "val_split": "minival",
 
-        "learning_rate": 0.00025,
+        "learning_rate": 0.001,
         "decay_rate": 10,
 
         "val_iter": 100,
@@ -19,7 +19,7 @@
         "stepsize": 450000,
         "snapshot": 5000,
 
-        "chunk_sizes": [12, 12, 12, 12]
+        "chunk_sizes": [12]
     },
     
     "db": {
@@ -47,7 +47,7 @@
 
         "top_k": 12,
         "num_dets": 12,
-        "categories": 80,
+        "categories": 12,
         "ae_threshold": 0.3,
         "nms_threshold": 0.5,
 
